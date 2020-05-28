@@ -1,0 +1,75 @@
+<!-- Class: SEG 3125 -->
+<!-- Date: May 2020 -->
+<!-- Student: Angelica Paynter -->
+<!-- Modified code from: https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module2-Grocery -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Maddie's Market</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="content">
+		<script type="text/javascript">console.log("hello")</script>
+
+		<!-- Tab links, each one with an onclick event associated with it -->
+		<div class="tab">
+		<div id="storeName">Maddie's Market</div>
+		  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+		  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+		  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+		</div>
+
+		<!-- Tab content -->
+		<div id="Client" class="tabcontent">
+		  <h3>Client Information</h3>
+		  <p>Tell us a bit about you.</p>
+			Choose any dietary restrictions (If you have no dietary restrictions, just click 'Filter'):<br>
+			<!--<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<option value=""></option>
+			<option value="Vegetarian">Vegetarian</option>
+		    <option value="GlutenFree">GlutenFree</option>
+		    <option value="None">None</option>
+			</select>-->
+			<form>
+			<input type="checkbox" name="filter" value="Vegetarian">Vegetarian<br>
+			<input type="checkbox" name="filter" value="GlutenFree">Gluten-Free<br>
+			<input type="checkbox" name="filter" value="Organic">Organic<br>
+			<input type="checkbox" name="filter" value="Lactose">Lactose Intolerant<br>
+			<input type="checkbox" name="filter" value="Diabetic">Diabetic<br>
+			</form>
+
+			<button onclick="populateListProductChoices(document.forms[0], 'displayProduct')">Filter</button>
+		</div>
+
+		<div id="Products" class="tabcontent">
+		  <h3>Your targeted products</h3>
+		  <p>We preselected products based on your restrictions.</p>
+			 Choose items to buy:
+			 <div id="displayProduct"></div>
+			 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+				Add selected items to cart.
+			</button>
+		</div>
+
+		<div id="Cart" class="tabcontent">
+		  <h3>Cart</h3>
+		  <p>Here is your cart.</p>
+		  <div id="displayCart"></div>
+		</div>
+
+	</div>
+
+	<footer>
+		<p>Website designed by Angelica Paynter.<br>
+		Based on code by Prof. Caroline Barriere.</p>
+	</footer>
+
+	<script src="scripts/grocery.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>
