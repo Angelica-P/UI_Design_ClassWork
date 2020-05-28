@@ -1,0 +1,145 @@
+<!-- Class: SEG 3125 -->
+<!-- Date: May 2020 -->
+<!-- Student: Angelica Paynter -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Module 1 Survey</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="content">
+	<h1>Module 1 Survey</h1>
+
+	<p>Please take a look at the Google Maps website <a href="https://www.google.ca/maps/" target=_blank>here</a> before completing the survey.
+	 You may also click on the image bellow instead.</p>
+
+	<a href="https://www.google.ca/maps/" target=_blank><img src="google_maps.png" alt="Google Maps Website" style="width: 75%"></a>
+
+	<h2>Survey</h2>
+
+	<form>
+		<!-- Personal Info qestions -->
+		<h3>Personal Info</h3>
+
+		<p>This will help to make sure an accurate sampling of users is taken.</p>
+
+		<div class="question">
+			Please select your gender:<br>
+			<input type="radio" name="gender" value="male">Male<br>
+			<input type="radio" name="gender" value="female">Female<br>
+			<input type="radio" name="gender" value="prefer not to say">Prefer Not to Say<br>
+		</div>
+
+		<div class="question">
+			How old are you?<br>
+			<select name="age">
+				<option value="None" selected="selected">None</option>
+				<option value="13">13 or less</option>
+				<option value="20">14-20</option>
+				<option value="30">21-30</option>
+				<option value="40">31-40</option>
+				<option value="50">41-50</option>
+				<option value="60">51-60</option>
+				<option value="70">61-70</option>
+				<option value="80">71-80</option>
+				<option value="90">81-90</option>
+				<option value="older">91 and over</option>
+			</select><br>
+		</div>
+
+		<div class="question">
+			On average, about how often do you use Google Maps?<br>
+			<input type="radio" name="past_use" value="daily">Once a day<br>
+			<input type="radio" name="past_use" value="weekly">Once a week<br>
+			<input type="radio" name="past_use" value="monthly">Once a month<br>
+			<input type="radio" name="past_use" value="yearly">Once a year<br>
+			<input type="radio" name="past_use" value="less">Less than once a year<br>
+			<input type="radio" name="past_use" value="never">Never<br>
+			<input type="radio" name="past_use" value="have_not_heard">I've never heard of Google Maps<br>
+		</div>
+
+		<!-- Actual Survey Questions -->
+		<h3>Questions</h3>
+
+		<p>These questions are based on the Google Maps website itself.</p>
+
+		<div class="question">
+			If I could use one word to describe to the look and feel of the Google Maps website, I would use the word:<br>
+			<input type="text" name="look_and_feel">
+		</div>
+
+		<div class="question">
+			The map mode I find easiest to use is:<br>
+			<select name="map_mode">
+				<option value="Map" selected="selected">Plain Map</option>
+				<option value="Sattelite">Sattelite</option>
+				<option value="Terrain">Terrain</option>
+				<option value="None">None, I find all map modes difficult to use.</option>
+			</select><br>
+		</div>
+
+		<div class="question">
+			Overall how satisfied are you with the clarity of the directions provided by Google Maps?<br>
+			<input type="radio" name="directions">: Dissatified<br>
+			<input type="radio" name="directions">: Slightly Dissatisfied<br>
+			<input type="radio" name="directions">: Neutral<br>
+			<input type="radio" name="directions">: Slightly Satisfied<br>
+			<input type="radio" name="directions">: Satisfied<br>
+		</div>
+
+		<div class="question">
+			Overall, I find Google Maps easy to use.<br>
+			<input type="radio" name="ease_of_use">: Strongly Disagree<br>
+			<input type="radio" name="ease_of_use">: Disagree<br>
+			<input type="radio" name="ease_of_use">: Neutral<br>
+			<input type="radio" name="ease_of_use">: Agree<br>
+			<input type="radio" name="ease_of_use">: Strongly Agree<br>
+		</div>
+
+		<div class="question">
+			If I have a question about how to use Google Maps I am most likely to click on ___ first.<br>
+			<input type="radio" name="how_to_use">The 'Take a Tour' option on the menu.<br>
+			<input type="radio" name="how_to_use">The 'Get Help' option on the menu.<br>
+			<input type="radio" name="how_to_use">The 'Tips and Tricks' option on the menu.<br>
+			<input type="radio" name="how_to_use">Something else.<br>
+			<input type="radio" name="how_to_use">I'd Google it.<br>
+			<input type="radio" name="how_to_use">I wouldn't click on anything and try using some other application instead.<br>
+		</div>
+
+		<div class="question">
+			How would you report an incorrect entry (ex. business listed but not there, incorrect street address for an entry, etc.) to Google?<br>
+			<textarea rows="10" cols="75"></textarea><br>
+		</div>
+
+		<div class="question">
+			I feel the Google Maps User Interface could be improved by:<br>
+			<input type="checkbox" name="improved">Cleaning up the maps, they're too busy.<br>
+			<input type="checkbox" name="improved">Adding more detail to the maps, I think they're missing information.<br>
+			<input type="checkbox" name="improved">Showing more menu options by default on the screen.<br>
+			<input type="checkbox" name="improved">Making some of the more common functions more obvious.<br>
+			<input type="checkbox" name="improved">Changing the colour scheme.<br>
+			<input type="checkbox" name="improved">Changing the entire look of the website.<br>
+			<input type="checkbox" name="improved">Something else not listed above.<br>
+			<input type="checkbox" name="improved">Nothing, it's perfect<br>
+		</div>
+
+		<div class="question">
+			Comments:<br>
+			<textarea rows="10" cols="75"></textarea><br>
+		</div>
+
+		<input type="submit" name="submit" value="Submit Survey" id="submit_button">
+
+	</form>
+	</div>
+
+	<footer>
+		<p>Website designed by Angelica Paynter.</p>
+	</footer>
+</body>
+
+</html>
