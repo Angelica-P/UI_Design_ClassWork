@@ -137,7 +137,7 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(selected_products)));
+	c.appendChild(document.createTextNode("Total Price is: $" + getTotalPrice(selected_products)));
 		
 }
 
@@ -146,7 +146,12 @@ function selectPreference(pref, value) {
 
 	if (p.innerHTML.includes(pref)) {
 		p.innerHTML = p.innerHTML.replace(pref+",	", "");
-		perferences.remove(value);
+		for (let p = 0; p < perferences.length; p++) {
+			if (perferences[p].localeCompare(value) == 0) {
+				perferences.splice(p, 1);
+				break;
+			}
+		}
 	} else {
 		p.innerHTML += pref+",	";
 		perferences.push(value);
