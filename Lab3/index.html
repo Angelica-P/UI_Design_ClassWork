@@ -1,0 +1,127 @@
+<!-- Class: SEG 3125 -->
+<!-- Date: June 2020 -->
+<!-- Student: Angelica Paynter -->
+<!-- Modified code from: https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module2-Grocery -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Maddie's Market</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="content">
+		<script type="text/javascript">console.log("hello")</script>
+
+		<!-- Tab links, each one with an onclick event associated with it -->
+		<div class="tab">
+		<div id="storeName">Maddie's Market</div>
+		  <!-- <button class="tablinks" onclick="openInfo(event, 'Client')">Preferences</button>
+		  <button class="tablinks" onclick="openInfo(event, 'Products')">Shop</button>
+		  <button class="tablinks" onclick="openInfo(event, 'Cart')">Checkout</button>-->
+		  <div id="ClientStep" class="tablinks"><b>Step 1:</b> Preferences</div>
+		  <div id="ProductsStep" class="tablinks"><b>Step 2:</b> Shop</div>
+		  <div id="CartStep" class="tablinks"><b>Step 3:</b> Checkout</div>
+		</div>
+
+		<!-- Tab content -->
+		<div id="Client" class="tabcontent">
+		  <h3>Preferences</h3>
+		  <p>Tell us a bit about you.</p>
+			Please choose your dietary preferences so we can help.<br>
+			<!--<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<option value=""></option>
+			<option value="Vegetarian">Vegetarian</option>
+		    <option value="GlutenFree">GlutenFree</option>
+		    <option value="None">None</option>
+			</select>-->
+	
+			<!-- <input type="checkbox" name="filter" value="Vegetarian">Vegetarian<br>
+			<input type="checkbox" name="filter" value="GlutenFree">Gluten-Free<br>
+			<input type="checkbox" name="filter" value="Organic">Organic<br>
+			<input type="checkbox" name="filter" value="Lactose">Lactose Intolerant<br>
+			<input type="checkbox" name="filter" value="Diabetic">Diabetic<br> -->
+			<button class="filter" onclick="selectPreference('Vegetarian', 'Vegetarian')">Vegetarian</button>
+			<button class="filter" onclick="selectPreference('Gluten-Free', 'GlutenFree')">Gluten-Free</button>
+			<button class="filter" onclick="selectPreference('Organic', 'Organic')">Organic</button><br>
+			<button class="filter" onclick="selectPreference('Lactose-Free', 'Lactose')">Lactose-Free</button>
+			<button class="filter" onclick="selectPreference('Diabetic', 'Diabetic')">Diabetic</button><br>
+			<h4>Your Preferences:</h4>
+			<div id="pref_list"></div>
+
+			<button onclick="populateListProductChoices('displayProduct'); openInfo(event, 'Products')">Filter Products ></button>
+		</div>
+
+		<div id="Products" class="tabcontent">
+		  <h3>Shop</h3>
+		  <p>We filtered our products based on your preferences.</p>
+			 Please select items to buy:
+			 
+			 <div id="displayProduct">
+			 	<!-- modified from: https://www.w3schools.com/howto/howto_js_accordion.asp -->
+			 	<button class="accordion">Vegetables</button>
+				<div class="panel" id="vegetables">
+				  <p>Lorem ipsum...</p>
+				</div>
+
+				<button class="accordion">Fruits</button>
+				<div class="panel" id="fruits">
+				  <p>Lorem ipsum...</p>
+				</div>
+
+				<button class="accordion">Dairy</button>
+				<div class="panel" id="dairy">
+				  <p>Lorem ipsum...</p>
+				</div> 
+
+				<button class="accordion">Juice/Beverages</button>
+				<div class="panel" id="beverages">
+				  <p>Lorem ipsum...</p>
+				</div> 
+
+				<button class="accordion">Cooking Products</button>
+				<div class="panel" id="cooking">
+				  <p>Lorem ipsum...</p>
+				</div>  
+
+				<button class="accordion">Meats</button>
+				<div class="panel" id="meats">
+				  <p>Lorem ipsum...</p>
+				</div> 
+
+				<button class="accordion">Bakery</button>
+				<div class="panel" id="bakery">
+				  <p>Lorem ipsum...</p>
+				</div> 
+
+				<button class="accordion">Miscellaneous</button>
+				<div class="panel" id="misc">
+				  <p>Lorem ipsum...</p>
+				</div>
+			 </div>
+			 <button onclick="openInfo(event, 'Client')">< Back to Prefences</button>
+			 <button id="addCart" type="button" class="block" onclick="selectedItems(); openInfo(event, 'Cart')">Proceed to Checkout. ></button>
+		</div>
+
+		<div id="Cart" class="tabcontent">
+		  <h3>Checkout</h3>
+		  <p>Here is what you've selected to buy. Please confirm your selections.</p>
+		  <div id="displayCart"></div>
+		  <button onclick="openInfo(event, 'Products')">< Back to Shopping</button>
+		</div>
+
+	</div>
+
+	<footer>
+		<p>Website designed by Angelica Paynter.<br>
+		Based on code by Prof. Caroline Barriere.</p>
+	</footer>
+
+	<script src="scripts/grocery.js"></script>
+	<script src="scripts/main.js"></script>
+	<script type="text/javascript">openInfo(event, 'Client')</script>
+</body>
+
+</html>

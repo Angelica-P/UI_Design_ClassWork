@@ -1,0 +1,127 @@
+/* Class: SEG 3125 */
+/* Date: May 2020 */
+/* Student: Angelica Paynter */
+
+/* starting colour: #f9890b */
+
+body {
+	background-color: #fef0e1;
+	margin: 0;
+	min-height: 100vh;
+	position: relative;
+	/*text-align: center;*/
+}
+
+div.content {
+	padding-bottom: 75px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#storeName {
+	display: block;
+	float: left;
+	padding: 6px 14px 0px 14px;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	
+}
+
+div.product {
+	/*border-top: 4px solid #fa982a;*/
+	margin: 5px;
+	padding: 8px;
+	background-color: #fde2c2;
+}
+
+
+footer {
+	background-color: #f9890b;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 75px;
+	margin: 0;
+}
+
+h3 {
+	border-bottom: 4px solid #fa982a;
+}
+
+form, label {
+	padding: 8px;
+}
+
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /*border: 1px solid #ccc;*/
+  background-color: #f9890b;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab div {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fba748;
+}
+
+/* Create an active/current tablink class */
+.tab div.active {
+  background-color: #fcc485;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /*border: 1px solid #ccc;*/
+  border-top: none;
+}
+
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_accordion.asp> */
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #fbb567;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #fa982a;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+} 
