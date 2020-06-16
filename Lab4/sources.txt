@@ -1,0 +1,14 @@
+Images
+
+- Sally.jpg : https://www.goodhousekeeping.com/holidays/halloween-ideas/g29401513/google-most-popular-halloween-costumes-2019/
+- Ally.jpg : https://www.heavencostumes.com.au/cool-teen-girl-s-green-witch-halloween-costume.html
+- Ann.jpg : https://www.walmart.ca/en/ip/Women-s-Deluxe-Dark-Witch-Costume/7GYMD6VJSHPK
+- Frank.jpg : https://www.halloweencostumes.ca/men-s-warlock-costume.html
+- haircut-women.jpg : https://hairstylecamp.com/delightful-short-hairstyles-for-teen-girls/6/
+- haircut-men.jpg : https://www.pinterest.ca/pin/782078291515220251/
+- dye-full.jpg : https://www.cosmopolitan.com/uk/beauty-hair/hair/a31939552/best-hair-dye/
+- dye-roots.jpg : https://www.pinterest.ca/pin/235594624236520564/
+- logo : http://clipart-library.com/images_k/witch-hat-silhouette/witch-hat-silhouette-1.png
+- location.png : screenshot of google.maps.com
+
+Tutorial used to understand radio buttons in Bootstrap: https://getbootstrap.com/docs/4.0/components/forms/
