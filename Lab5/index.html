@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Wicked Hair</title>
+
+		<!-- For Bootstrap -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  		<!-- For JQuery DatePicker --> 
+  		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/le-frog/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  		<!-- Personal stylesheet -->
+  		<link rel="stylesheet" href="styles.css">
+
+  		<!-- Font link -->
+  		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+
+  		<!-- Personal Javascript -->
+  		<script src="scripts/service.js"></script>
+	</head>
+
+	<body class="container-fluid">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+			<a class="navbar-brand" href="#">
+				<img src="images/logo.png" alt="Wicked Hair Logo" style="width:40px">
+			</a>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#services"><img src="https://img.icons8.com/ios-filled/50/000000/barber-scissors.png" style="width:30px"/>  Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#experts"><img src="https://img.icons8.com/ios-filled/96/000000/conference-background-selected.png" style="width:30px"/>   Experts</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#location"><img src="https://img.icons8.com/ios-filled/50/000000/marker.png" style="width:30px"/>   Location</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#appointment"><img src="https://img.icons8.com/ios-filled/96/000000/calendar.png" style="width:30px"/>  Book Appointment</a>
+				</li>
+			</ul>
+		</nav>
+
+		<h1 class="display-1 text-center">Wicked Hair</h1>
+		<img src="http://clipart-library.com/images_k/witch-hat-silhouette/witch-hat-silhouette-1.png" alt="Wicked Hair Logo" class="mx-auto d-block" id="logo">
+		<!--<img src="images/try2.png" alt="Wicked Hair Logo" class="mx-auto d-block" id="logo">-->
+
+		<!-- Services Section -->
+		<div id="services">
+			<h2 class="text-center"><img src="https://img.icons8.com/ios-filled/50/000000/barber-scissors.png" style="width:35px"/>   Our Services</h2>
+			<!-- Women's hair -->
+			<div class="row">
+				<div class="col-sm-7 services-odd">
+					<h3>Cut and Style (Women)</h3>
+					<p>Need a trim or a complete change in hairstyle? We've got you 
+					covered.</p>
+					<h5>Price: $40 - $60 (Depending on time required)</h5>
+				</div>
+				<div class="col-sm-5 services-odd">
+					<img src="images/haircut-women.jpg" alt="women's haircut">
+				</div>
+			</div>
+
+			<!-- Men's Hair -->
+			<div class="row">
+				<div class="col-sm-5 services-even">
+					<img src="images/haircut-men.jpg" alt="women's haircut">
+				</div>
+				<div class="col-sm-7 services-even">
+					<h3>Cut and Style (Men)</h3>
+					<p>Hair falling in you eyes? Want to change your style to the
+					latest trend? Look no further.</p>
+					<h5>Price: $30 - $50 (Depending on time required)</h5>
+				</div>
+			</div>
+
+			<!-- Dyeing hair -->
+			<div class="row">
+				<div class="col-sm-7 services-odd">
+					<h3>Dye (Full head)</h3>
+					<p>Ready for a change? Dye anything from raindows to the more
+						traditional browns, blondes and reds. With a multitude of colours
+						on hand and loads of experience we're ready to handle even your 
+						most creative request.</p>
+					<h5>Price: $80 - $110 (Depending on time required)</h5>
+				</div>
+				<div class="col-sm-5 services-odd">
+					<img src="images/dye-full.jpg" alt="women's haircut">
+				</div>
+			</div>
+
+			<!-- Dying Roots -->
+			<div class="row">
+				<div class="col-sm-5 services-even">
+					<img src="images/dye-roots.jpg" alt="women's haircut">
+				</div>
+				<div class="col-sm-7 services-even">
+					<h3>Dye (Root touchup)</h3>
+					<p>Hair growing a little too fast? Just need a few touchups to
+						handle that new growth so it matches the rest? We'll have you 
+						done in no time.</p>
+					<h5>Price: $20</h5>
+				</div>
+			</div>
+		</div>
+
+		<!-- Experts Section -->
+		<div id="experts">
+			<h2 class="text-center"><img src="https://img.icons8.com/ios-filled/96/000000/conference-background-selected.png" style="width:35px"/>   Our Experts</h2>
+			<div class="card-deck">
+				<!-- Sally -->
+				<div class="card">
+					<img class="card-img-top" src="images/Sally.jpg" alt="Sally">
+					<h4 class="card-title">Sally</h4>
+					<p>Our senior hair stylist. Sally knows her way around a 
+					hairdo. She'll have you looking your best in no time. Sally
+					specializes in complicated and creative hair dye requests and
+					stylign curly hair.</p>
+				</div>
+
+				<!-- Ally -->
+				<div class="card">
+					<h4 class="card-title">Ally</h4>
+					<p>The newest member of the Wicked Hair team. Ally brings lots
+					of new and clever ideas to the team. Don't know what hairstyle
+					you'd like done? Want something truely unique? Ask Ally.</p>
+
+					<img class="card-img-bottom" src="images/Ally.jpg" alt="Ally">
+				</div>
+
+				<!-- Ann -->
+				<div class="card">
+					<img class="card-img-top" src="images/Ann.jpeg" alt="Ann">
+					<h4 class="card-title">Ann</h4>
+					<p>Ann is an expert at handling long hair and complex braiding
+					styles. Want your hair done for a special occasion? She's got 
+					you covered.</p>
+				</div>
+
+				<!-- Frank -->
+				<div class="card">
+					<h4 class="card-title">Frank</h4>
+					<p>Frank is the other half of the hair dye team with Sally. He 
+					can do any style and make it look easy. Having been at Wicked 
+					Hair the second longest, he has experience with almost any do 
+					under the sun.</p>
+
+					<img class="card-img-bottom" src="images/Frank.jpg" alt="Frank">
+				</div>
+			</div>
+		</div>
+
+		<!-- Location Section -->
+		<div id="location">
+			<h2 class="text-center"><img src="https://img.icons8.com/ios-filled/50/000000/marker.png" style="width:35px"/>   Our Location</h2>
+			<div class="row">
+				<!-- Map -->
+				<div class="col-sm-5">
+					<img src="images/location.png" alt="location of Wicked Hair">
+				</div>
+
+				<!-- Address -->
+				<div class="col-sm-7">
+					<h3>Address:</h3>
+					<p data-toggle="tooltip" title="Our Street Address">15 Jack-O-Lantern Dr.<br>
+						Ottawa, Ontario<br></p>
+					<h3>Contact Us:</h3>
+					<p data-toggle="tooltip" title="Our Phone Number and Email Address">
+					613-258-1131<br>
+					contact@wicked.hair.com</p>
+					<h3>Hours:</h3>
+					<p data-toggle="tooltip" title="Our Store Hours">8:00am-6:00pm Daily<br>
+					*Appointments can start no later than 5:00pm.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Booking an Appointment Section -->
+		<div id="appointment">
+			<h2 class="text-center"><img src="https://img.icons8.com/ios-filled/96/000000/calendar.png" style="width:35px"/>   Book an Appointment</h2>
+			<form>
+				<h3><img src="images/icons8-contacts-100.png" style="width:30px"/>  Contact Info:</h3>
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label for="firstname">First Name</label>
+							<input type="text" id="firstname" class="form-control" placeholder="Enter First Name">
+						</div>
+						<div class="col">
+							<label for="lastname">Last Name</label>
+							<input type="text" id="lastname" class="form-control" placeholder="Enter Last Name">
+						</div>
+					</div>
+					<label for="email">Email Address</label>
+					<input type="email" id="email" class="form-control" placeholder="Enter Email Address">
+					<label for="phone">Phone Number</label>
+					<input type="phone" id="phone" class="form-control" placeholder="(XXX) XXX-XXXX">
+					<!--<div class="row">
+						<div class="col">
+							<label for="email">Email Address</label>
+							<input type="email" id="email" class="form-control" placeholder="Enter Email Address">
+						</div>
+						<div class="col">
+							<label for="phone">Phone Number</label>
+							<input type="phone" id="phone" class="form-control" placeholder="(XXX) XXX-XXXX">
+						</div>
+						<div class="col">
+							<label for="credit">Credit Card</label>
+							<input type="credit" id="credit" class="form-control" placeholder="XXXX XXXX XXXX XXXX" data-toggle="tooltip" title="In case of no-show without a valid reason (death in the family, medical emergency, etc.), a $20 fee is charged to the card.">
+						</div>
+					</div>-->
+				</div>
+
+				<h3><img src="images/icons8-comb-100.png" style="width:30px"/>  Appointment for:</h3>
+				<div data-toggle="tooltip" title="Choose the service desired during the appointment." id="appointment-service">
+				<div class="form-check">
+  					<input class="form-check-input" type="radio" name="service" id="haircut-women" value="haircut-women" checked>
+  					<label class="form-check-label" for="haircut-women">
+    					Cut and Style (Women)
+ 					</label>
+				</div>
+				<div class="form-check">
+  					<input class="form-check-input" type="radio" name="service" id="haircut-men" value="haircut-men">
+  					<label class="form-check-label" for="haircut-men">
+				    	Cut and Style (Men)
+				  	</label>
+				</div>
+				<div class="form-check">
+				  	<input class="form-check-input" type="radio" name="service" id="full-dye" value="full-dye">
+				  	<label class="form-check-label" for="full-dye">
+				    	Dye (Full head)
+				  	</label>
+				</div>
+				<div class="form-check">
+				 	<input class="form-check-input" type="radio" name="service" id="roots-dye" value="roots-dye">
+				  	<label class="form-check-label" for="roots-dye">
+				    	Dye (Roots Touchup)
+				  	</label>
+				</div></div><br>
+				<!--Cut and Style (Women): <input type="radio" name="haircut-women"><br>
+				Cut and Style (Men): <input type="radio" name="haircut-men"><br>
+				Dye (Full head): <input type="radio" name="full-dye"><br>
+				Dye (Roots Touchup): <input type="radio" name="roots-dye"><br>-->
+
+				<h3><img src="images/icons8-popular-man-100.png" style="width:30px"/>  Appointment with:</h3>
+				<div data-toggle="tooltip" title="Choose the expert you want the appointment with." id="appointment-expert">
+				<div class="form-check">
+  					<input class="form-check-input" type="radio" name="expert" id="sally" value="sally" checked>
+  					<label class="form-check-label" for="sally">
+    					Sally
+ 					</label>
+				</div>
+				<div class="form-check">
+  					<input class="form-check-input" type="radio" name="expert" id="ally" value="ally">
+  					<label class="form-check-label" for="ally">
+				    	Ally
+				  	</label>
+				</div>
+				<div class="form-check disabled">
+				  	<input class="form-check-input" type="radio" name="expert" id="ann" value="ann">
+				  	<label class="form-check-label" for="ann">
+				    	Ann
+				  	</label>
+				</div>
+				<div class="form-check">
+				 	<input class="form-check-input" type="radio" name="expert" id="frank" value="frank">
+				  	<label class="form-check-label" for="frank">
+				    	Frank
+				  	</label>
+				</div></div><br>
+
+
+				<h3><img src="images/icons8-clock-100.png" style="width:30px"/>  Select Time and Date:</h3>
+				<div class="form-group">
+					<label for="dateInput">
+				    	Date
+				  	</label>
+					<input class="form-control" type="text" id="dateInput">
+				</div>
+
+				<div class="form-group">
+					<label for="time">
+				    	Select Time
+				  	</label>
+					<select class="form-control" data-toggle="tooltip" title="Select a time for the appointment to start." id="time">
+						<option>8:00 am</option>
+						<option>9:00 am</option>
+						<option>10:00 am</option>
+						<option>11:00 am</option>
+						<option>12:00 pm</option>
+						<option>1:00 pm</option>
+						<option>2:00 pm</option>
+						<option>3:00 pm</option>
+						<option>4:00 pm</option>
+						<option>5:00 pm</option>
+					</select>
+				</div>
+
+				<h3><img src="images/icons8-card-payment-100.png" style="width:30px"/>  Payment:</h3>
+				<div class="form-group">
+					<label for="credit">Credit Card</label>
+					<input type="credit" id="credit" class="form-control" placeholder="XXXX XXXX XXXX XXXX" data-toggle="tooltip" title="In case of no-show without a valid reason (death in the family, medical emergency, etc.), a $20 fee is charged to the card.">
+				</div>
+
+				<button>Book Appointment</button>
+
+			</form>
+		</div>
+	</body>
+
+	<footer class="container-fluid">
+		<p class="text-center">Website designed by Angelica Paynter.<br>
+		Based on code by Prof. Caroline Barriere.<br>
+		<a target="_blank" href="https://icons8.com/icons/set/card-in-use">Card Payment icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+		<a target="_blank" href="https://icons8.com/icons/set/contacts">Contacts icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+		<a target="_blank" href="https://icons8.com/icons/set/clock">Clock icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+		<a target="_blank" href="https://icons8.com/icons/set/comb">Comb icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+		<a target="_blank" href="https://icons8.com/icons/set/popular-man">Popular man icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+
+	</footer>
+
+</html>
