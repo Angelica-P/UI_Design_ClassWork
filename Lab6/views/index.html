@@ -1,0 +1,232 @@
+<!-- Class: SEG 3125 -->
+<!-- Date: May 2020 -->
+<!-- Student: Angelica Paynter -->
+
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+	<title>Module 6 Survey</title>
+
+	<!-- For Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  	<!-- Personal stylesheet -->
+  	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+	<h1 class="display-1 text-center">Module 6 Survey</h1>
+
+	<p class="text-center">Please take a look at the Google Maps website <a href="https://www.google.ca/maps/" target=_blank>here</a> before completing the survey.
+	 You may also click on the image bellow instead.
+
+	<a href="https://www.google.ca/maps/" target=_blank><img src="google_maps.png" alt="Google Maps Website" style="width: 75%"></a></p>
+
+	<h2 class="text-center">Survey</h2>
+
+	<form method="POST">
+		<!-- Personal Info qestions -->
+		<h3>Personal Info</h3>
+
+		<p>This will help to make sure an accurate sampling of users is taken.</p>
+
+		<div class="form-group">
+			Please select your gender:<br>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="gender" id="male" value="male">
+				<label class="form-check-label" for="male">Male</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="gender" id="male" value="female">
+				<label class="form-check-label" for="female">Female</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="gender" value="not_say" id="none">
+				<label class="form-check-label" for="none">Prefer Not to Say</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="age">How old are you?</label>
+			<select class="form-control" name="age" id="age">
+				<option value="None" selected="selected">None</option>
+				<option value="13">13 or less</option>
+				<option value="20">14-20</option>
+				<option value="30">21-30</option>
+				<option value="40">31-40</option>
+				<option value="50">41-50</option>
+				<option value="60">51-60</option>
+				<option value="70">61-70</option>
+				<option value="80">71-80</option>
+				<option value="90">81-90</option>
+				<option value="older">91 and over</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			On average, about how often do you use Google Maps?<br>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="past_use" value="daily" id="daily">
+				<label class="form-check-label" for="daily">Once a day</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="past_use" value="weekly" id="weekly">
+				<label class="form-check-label" for="weekly">Once a week</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="past_use" value="monthly" id="monthly">
+				<label class="form-check-label" for="monthly">Once a month</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="past_use" value="yearly" id="yearly">
+				<label class="form-check-label" for="yearly">Once a year</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="past_use" value="less" id="less">
+				<label class="form-check-label" for="less">Less than once a year</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="past_use" value="never" id="never">
+				<label class="form-check-label" for="never">Never</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="past_use" value="have_not_heard" id="have_not_heard">
+				<label class="form-check-label" for="have_not_heard">I've never heard of Google Maps</label>
+			</div>
+		</div>
+
+		<!-- Actual Survey Questions -->
+		<h3>Questions</h3>
+
+		<p>These questions are based on the Google Maps website itself.</p>
+
+		<div class="form-group">
+			<label for="look_and_feel">If I could use one word to describe to the look and feel of the Google Maps website, I would use the word:</label>
+			<input class="form-control" type="text" name="look_and_feel" placeholder="Enter word here">
+		</div>
+
+		<div class="form-group">
+			<label for="map_mode">The map mode I find easiest to use is:</label>
+			<select class="form-control" name="map_mode" id="map_mode">
+				<option value="Map" selected="selected">Plain Map</option>
+				<option value="Sattelite">Sattelite</option>
+				<option value="Terrain">Terrain</option>
+				<option value="None">None, I find all map modes difficult to use.</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label for="clarity">Overall how satisfied are you with the clarity of the directions provided by Google Maps?</label>
+			<select class="form-control" name="clarity" id="clarity">
+				<option value="dissatisfied">Dissatisfied</option>
+				<option value="slightly_dissatisfied">Slightly Dissatisfied</option>
+				<option value="neutral" selected="selected">Neutral</option>
+				<option value="slightly_satisfied">Slightly Satisfied</option>
+				<option value="satisfied">Satisfied</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label for="ease_of_use">Overall, I find Google Maps easy to use.</label>
+			<select class="form-control" name="ease_of_use" id="ease_of_use">
+				<option value="dissatisfied">Dissatisfied</option>
+				<option value="slightly_dissatisfied">Slightly Dissatisfied</option>
+				<option value="neutral" selected="selected">Neutral</option>
+				<option value="slightly_satisfied">Slightly Satisfied</option>
+				<option value="satisfied">Satisfied</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			If I have a question about how to use Google Maps I am most likely to click on ___ first.<br>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="how_to_use" value="take_tour" id="take_tour">
+				<label class="form-check-label" for="take_tour">The 'Take a Tour' option on the menu.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="how_to_use" value="get_help" id="get_help">
+				<label class="form-check-label" for="get_help">The 'Get Help' option on the menu.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="how_to_use" value="tips_tricks" id="tips_tricks">
+				<label class="form-check-label" for="tips_tricks">The 'Tips and Tricks' option on the menu.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="how_to_use" value="else" id="else">
+				<label class="form-check-label" for="else">Something else.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="how_to_use" value="google" id="google">
+				<label class="form-check-label" for="google">I'd Google it.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="how_to_use" value="leave" id="leave">
+				<label class="form-check-label" for="leave">I wouldn't click on anything and try using some other application instead.</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="incorrect_entry">How would you report an incorrect entry (ex. business listed but not there, incorrect street address for an entry, etc.) to Google?</label>
+			<textarea class="form-control" rows="5" cols="75" id="incorrect_entry" name="incorrect_entry"></textarea><br>
+		</div>
+
+		<div class="form-group">
+			I feel the Google Maps User Interface could be improved by:<br>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="improved" value="clean_maps" id="clean_maps">
+				<label class="form-check-label" for="clean_maps">Cleaning up the maps, they're too busy.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="improved" value="map_details" id="map_details">
+				<label class="form-check-label" for="map_details">Adding more detail to the maps, I think they're missing information.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="improved" value="more_menu" id="more_menu">
+				<label class="form-check-label" for="more_menu">Showing more menu options by default on the screen.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="improved" value="more_functions" id="more_functions">
+				<label class="form-check-label" for="more_functions">Making some of the more common functions more obvious.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="improved" value="change_colours" id="change_colours">
+				<label class="form-check-label" for="change_colours">Changing the colour scheme.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="improved" value="entire_look" id="entire_look">
+				<label class="form-check-label" for="entire_look">Changing the entire look of the website.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="improved" value="not_listed" id="not_listed">
+				<label class="form-check-label" for="not_listed">Something else not listed above.</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="improved" value="nothing" id="nothing">
+				<label class="form-check-label" for="nothing">Nothing, it's perfect</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="comments">Comments:</label>
+			<textarea  class="form-control" rows="5" cols="75" id="comments" name="comments"></textarea><br>
+		</div>
+
+		<button type="submit" id="submit_button">Submit Survey</button>
+
+	</form>
+	</div>
+
+	<footer class="container-fluid text-center">
+		<p>Website designed by Angelica Paynter.<br>
+		Based on code by Prof. Caroline Barriere.</p>
+	</footer>
+</body>
+
+</html>
